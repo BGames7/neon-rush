@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+button {
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background: cyan;
+  color: black;
+  cursor: pointer;
+}
+#menu, #gameOver { display: block; }
+.hidden { display: none; }
+canvas {
+  display: block;
+  margin: 40px auto;
+  background: #111;
+  border-radius: 20px;
+  touch-action: none;
+}

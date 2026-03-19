@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Neon Rush: Pulse</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="menu">
+  <h1>⚡ Neon Rush: Pulse</h1>
+  <p>Best Score: <span id="bestScore">0</span></p>
+  <button onclick="startGame()">Start Game</button>
+</div>
+
+<canvas id="gameCanvas"></canvas>
+
+<div id="gameOver" class="hidden">
+  <h2>Game Over</h2>
+  <p>Score: <span id="score"></span></p>
+  <button onclick="restartGame()">Retry</button>
+</div>
+
+<script src="sound.js" defer></script>
+<script src="game.js" defer></script>
+</body>
+</html>
