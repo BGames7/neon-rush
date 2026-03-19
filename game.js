@@ -61,7 +61,10 @@ document.addEventListener("DOMContentLoaded", function() {
       if(typeof playClickSound === "function") playClickSound();
       active = false;
       time *= 0.95;
-      setTimeout(spawnAndActivate, 300);
+      setTimeout(() => {
+  active = true;
+  spawnAndActivate();
+}, 300);
     }
   });
 
