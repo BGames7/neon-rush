@@ -68,11 +68,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  function spawnAndActivate() {
-    spawnCircles();
-    active = true;
-    setTimeout(() => { if(active) gameOver(); }, time);
-  }
+ function spawnAndActivate() {
+  spawnCircles();
+  active = true;
+
+  clearTimeout(window.gameTimeout); // مهم
+  window.gameTimeout = setTimeout(() => {
+    if(active) gameOver();
+  }, time);
+}
 
   window.startGame = function() {
     document.getElementById("menu").style.display = "none";
